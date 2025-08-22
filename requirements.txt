@@ -1,0 +1,23 @@
+# Core Python libraries
+numpy
+pandas
+
+# Language Models and Embeddings
+openai
+ollama
+transformers
+langchain
+chromadb
+
+# PDF Handling
+pypdf
+reportlab
+
+# Web Framework / Interactive App
+streamlit
+
+# Environment & Config
+python-dotenv
+
+# Optional utilities
+tqdm
