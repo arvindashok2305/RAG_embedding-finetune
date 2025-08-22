@@ -1,64 +1,123 @@
-📄 README.md
-# RGA Embedding Project
-
-This project implements a Retrieval-Augmented Generation (RAG) pipeline with PDF creation, helper functions, and an interactive Q&A system.  
-It is modularized into separate files for better maintainability.
+RGA Embedding Project
 
 ---
+## 📌 Overview
 
-## 📂 Project Structure
+This repository contains the implementation of RGA Embedding, a system designed for efficient retrieval, generation, and analysis using embeddings.
+It leverages natural language processing (NLP) techniques, vector embeddings, and retrieval-augmented generation (RAG) pipelines to process documents and enable interactive Q&A.
 
+The Jupyter Notebook (RGA_Embeddeding.ipynb) walks through:
 
+Data preprocessing
 
-src/
-├── imports.py # Handles all library imports
-├── config.py # Stores configuration values (API keys, paths, etc.)
-├── helpers.py # Helper functions for common tasks
-├── pdf_creation.py # Functions for generating PDFs
-├── rag_pipeline.py # RAG pipeline initialization and execution
-├── interactive_qa.py # Interactive Q&A session logic
+Embedding generation
 
+RAG pipeline setup
 
----
+PDF creation from results
 
-## ⚙️ Setup
-
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/your-username/your-repo.git
-   cd your-repo
+Interactive question answering
 
 ---
+## 🏗️ Project Structure
+.
+├── RGA_Embeddeding.ipynb   # Main notebook with implementation
+├── config.py               # Configuration settings (API keys, paths, etc.)
+├── rag_pipeline.py         # Setup for RAG pipeline
+├── interactive_qa.py       # Interactive Q&A module
+├── helpers.py              # Helper functions
+├── pdf_utils.py            # PDF creation utilities
+├── requirements.txt        # Dependencies
+└── README.md               # Documentation
 
-Create a virtual environment and activate it:
+---
+## ⚙️ Installation
+
+Clone the repository:
+
+git clone https://github.com/arvindashok2305/RAG_embedding-finetune
+cd fruits-veg-classification
+
+
+Create and activate a virtual environment:
 
 python -m venv venv
-source venv/bin/activate   # On Linux/Mac
-venv\Scripts\activate      # On Windows
+source venv/bin/activate   # On Windows: venv\Scripts\activate
 
----
 
 Install dependencies:
 
 pip install -r requirements.txt
 
 ---
+## 🚀 Usage
+Running the Notebook
 
-🚀 Usage
+Launch Jupyter Notebook:
 
-1. Run Interactive Q&A
-python src/interactive_qa.py
+jupyter notebook
 
-2. Generate PDFs
-python src/pdf_creation.py
 
-3. Customize Config
+Open RGA_Embeddeding.ipynb and run cells sequentially.
 
-Set your API keys and paths in:
+Using as Python Modules
 
-src/config.py
+Configure settings in config.py.
 
-📌 Notes
+Run the RAG pipeline:
+
+python rag_pipeline.py
+
+
+Use interactive Q&A:
+
+python interactive_qa.py
+
+---
+## 📂 Features
+
+Embedding Generation – Creates vector embeddings from input text.
+
+RAG Pipeline – Integrates embeddings into a retrieval-augmented generation workflow.
+
+Interactive Q&A – Enables real-time question answering.
+
+PDF Export – Saves query responses and results as formatted PDFs.
+
+Modular Codebase – Organized into separate modules for maintainability.
+
+---
+## 🛠️ Technologies Used
+
+Python 3.x
+
+Jupyter Notebook
+
+LangChain / Hugging Face Transformers (if used)
+
+FAISS / Chroma (for vector storage and retrieval)
+
+ReportLab (for PDF generation)
+
+Other dependencies listed in requirements.txt
+
+---
+## 📖 Example Workflow
+
+Load dataset and preprocess text.
+
+Generate embeddings using pre-trained models.
+
+Store embeddings in a vector database.
+
+Query the database with natural language questions.
+
+Retrieve relevant context and generate responses.
+
+Export results to a PDF file.
+
+---
+## 📌 Notes
 
 Make sure to add your API keys in config.py before running.
 
